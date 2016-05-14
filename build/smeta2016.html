@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>ТСЖ Комсомольский</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/0.1.11/slideout.min.js"></script>
+  </head>
+  <body>
+    <nav id="menu" class="menu">
+      <div class="nav-header">
+        <h1 class="nav-header__title">Навигация
+          <!--Доделать меню-->
+        </h1>
+      </div>
+      <nav id="navigation" class="page-header__nav">           
+        <ul class="page-header__nav-list">
+          <li class="page-header__nav-list-item"><a href="">Главная<br><img src="images/newspaper.png" alt="alt" height="50px" width="50px" class="nav-img"></a></li>
+          <li class="page-header__nav-list-item"><a href="avaria.html">Службы<br><img src="images/siren.png" alt="alt" height="50px" width="50px" class="nav-img"></a></li>
+          <li class="page-header__nav-list-item"><a href=""> Тарифы<br><img src="images/money.png" alt="alt" height="50px" width="50px" class="nav-img"></a></li>
+          <li class="page-header__nav-list-item"><a id="link" class="accordion">  Услуги<br><img src="images/telemarketer.png" alt="alt" height="50px" width="50px" class="nav-img">
+              <ul class="page-header__nav-sublist content">
+                <li class="page-header__nav-sublist-item"><a href="#">Паспортный стол</a></li>
+                <li class="page-header__nav-sublist-item"><a href="#">Качество услуг</a></li>
+                <li class="page-header__nav-sublist-item"><a href="#">Бесплатные услуги</a></li>
+                <li class="page-header__nav-sublist-item"><a href="#">Поставщики ком.услуг                                                                                        </a></li>
+              </ul></a></li>
+          <li class="page-header__nav-list-item"><a id="link" class="accordion">  Библиотека<br><img src="images/book.png" alt="alt" height="50px" width="50px" class="nav-img">
+              <ul class="page-header__nav-sublist content">
+                <li class="page-header__nav-sublist-item"><a href="#">Справка</a></li>
+                <li class="page-header__nav-sublist-item"><a href="#">Жилищный кодекс</a></li>
+                <li class="page-header__nav-sublist-item"><a href="#">Постановление</a></li>
+                <li class="page-header__nav-sublist-item"><a href="#">Федеральные законы</a></li>
+              </ul></a></li>
+          <li class="page-header__nav-list-item"><a id="link" class="accordion">  ТСЖ<br><img src="images/team.png" alt="alt" height="50px" width="50px" class="nav-img">
+              <ul class="page-header__nav-sublist content">
+                <li class="page-header__nav-sublist-item"><a href="#">Правление ТСЖ</a></li>
+                <li class="page-header__nav-sublist-item"><a href="#">Устав ТСЖ</a></li>
+                <li class="page-header__nav-sublist-item"><a href="#">Регистрация ТСЖ</a></li>
+                <li class="page-header__nav-sublist-item"><a href="#">Договор управления </a></li>
+                <li class="page-header__nav-sublist-item"><a href="#">Смета на сод. дома</a></li>
+                <li class="page-header__nav-sublist-item"><a href="#">Отчет 2015</a></li>
+                <li class="page-header__nav-sublist-item"><a href="#">Фото</a></li>
+                <li class="page-header__nav-sublist-item"><a href="#">Штатное расписание</a></li>
+                <li class="page-header__nav-sublist-item"><a href="#">План работ</a></li>
+              </ul></a></li>
+          <li class="page-header__nav-list-item"><a href="">Вопрос-Ответ <br><img src="images/people.png" alt="alt" height="50px" width="50px" class="nav-img"></a></li>
+        </ul>
+      </nav>
+    </nav>
+    <main id="panel" class="panel"><a class="toggle-button">МЕНЮ</a>
+      <header>
+        <div class="container">
+          <div class="row">
+            <div class="page-header">
+              <!--Доделать баннер -->
+              <div class="page-header__banner col-xs-12">
+                <h1 class="page-header__banner-title"> </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    </main>
+    <script src="js/script.min.js"></script>
+    <script>
+      var slideout = new Slideout({
+      'panel': document.getElementById('panel'),
+      'menu': document.getElementById('menu'),
+      'padding': 256,
+      'tolerance': 70
+      });
+    </script>
+  </body>
+</html>
