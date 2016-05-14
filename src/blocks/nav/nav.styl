@@ -1,54 +1,293 @@
 body 
   width: 100%
   height: 100%
+.nav-header
+    &__title
+        font-family 'Lobster', cursive
+#link 
+    cursor pointer
+ @media(min-width: 0px)
+
+    .slideout-menu 
+        position: fixed
+        left: 0
+        top: 0
+        bottom: 0
+        right: 0
+        z-index: 0
+        width: 256px
+        overflow-y: auto
+        -webkit-overflow-scrolling: touch
+        display: none
 
 
-.slideout-menu 
-  position: fixed
-  left: 0
-  top: 0
-  bottom: 0
-  right: 0
-  z-index: 0
-  width: 256px
-  overflow-y: auto
-  -webkit-overflow-scrolling: touch
-  display: none
+    .slideout-panel 
+        position: relative
+        z-index: 1
 
 
-.slideout-panel 
-  position: relative
-  z-index: 1
+    .slideout-open,
+    .slideout-open body,
+    .slideout-open .slideout-panel 
+        overflow: hidden
 
 
-.slideout-open,
-.slideout-open body,
-.slideout-open .slideout-panel 
-  overflow: hidden
+    .slideout-open .slideout-menu 
+        display: block
 
-
-.slideout-open .slideout-menu 
-  display: block
-
-.menu
-    background-color grey
+    .menu
+        background-color #262827
     
-.menu h2
-    text-align center
-.panel
-    background-color white
-    height 800px
-    position relative
-.toggle-button
-    font-size 48px !important
-    position absolute
-    top 5px
-    left 40px
-.page-header
-    &__nav-list 
-        list-style-type none
-    &__nav-sublist
-        list-style-type none
-    &__nav-sublist-item 
-        margin-left -40px 
-                
+    
+    .menu h1
+        text-align center
+        color #ffffff
+        border-bottom 2px solid #7D7D7C
+        padding-bottom 15px
+    .panel
+        background-color white
+        height 800px
+        position relative
+    .toggle-button
+        font-size 15px !important
+        position absolute
+        top 10px
+        left 20px
+        cursor pointer
+        background #7D7D7C 
+        color #ffffff
+        padding 10px 20px 10px 20px 
+        border-radius:  30px
+        border 2px solid #7D7D7C
+    .toggle-button:hover
+        background  transparent 
+        color #7D7D7C 
+        border-radius:  30px
+    .toggle-button:active
+        background  transparent 
+        color #000000 
+        border-radius:  30px
+        border 2px solid #000000
+    .page-header
+        &__nav-list 
+            font-family 'Lobster', cursive
+            list-style-type none
+            padding-left 0px
+            margin-top 0px
+            text-align center
+        &__nav-list-item 
+            padding-top 20px
+            padding-bottom 10px
+            border-bottom 4px solid #fff
+        &__nav-list-item a 
+            text-decoration none
+            color #ffffff  
+            font-size 20px 
+            padding-bottom 15px
+            display block 
+           
+        &__nav-sublist
+            list-style-type none
+        
+        &__nav-sublist-item 
+            margin-left -40px 
+            padding-top 15px
+            padding-bottom 15px
+            border-bottom 1px solid #ffffff
+            border-top 1px solid #ffffff      
+        &__nav-sublist-item a 
+            text-decoration none
+            color #ffffff        
+            font-size 20px
+        .nav-img
+            margin-top 10px
+@media(min-width 768px)
+
+    .slideout-menu 
+        position: fixed
+        left: 0
+        top: 0
+        bottom: 0
+        right: 0
+        z-index: 0
+        width: 256px
+        overflow-y: auto
+        -webkit-overflow-scrolling: touch
+        display: none
+
+
+    .slideout-panel 
+        position: relative
+        z-index: 1
+
+
+    .slideout-open,
+    .slideout-open body,
+    .slideout-open .slideout-panel 
+        overflow: hidden
+
+
+    .slideout-open .slideout-menu 
+        display: block
+
+    .menu
+        background-color #262827
+    
+    
+    .menu h1
+        text-align center
+        color #ffffff
+        border-bottom 2px solid #7D7D7C
+        padding-bottom 15px
+    .panel
+        background-color white
+        height 800px
+        position relative
+    .toggle-button
+        font-size 32px !important
+        position absolute
+        top 20px
+        left 40px
+        cursor pointer
+        background #7D7D7C 
+        color #ffffff
+        padding 10px 20px 10px 20px 
+        border-radius:  30px
+        border 2px solid #7D7D7C
+    .toggle-button:hover
+        background  transparent 
+        color #7D7D7C 
+        border-radius:  30px
+    .toggle-button:active
+        background  transparent 
+        color #000000 
+        border-radius:  30px
+        border 2px solid #000000
+    .page-header
+        &__nav-list 
+            font-family 'Lobster', cursive
+            list-style-type none
+            padding-left 0px
+            margin-top 0px
+            text-align center
+        &__nav-list-item 
+            padding-top 20px
+            padding-bottom 10px
+            border-bottom 4px solid #fff
+        &__nav-list-item a 
+            text-decoration none
+            color #ffffff  
+            font-size 20px 
+            padding-bottom 15px
+            display block 
+           
+        &__nav-sublist
+            list-style-type none
+        
+        &__nav-sublist-item 
+            margin-left -40px 
+            padding-top 15px
+            padding-bottom 15px
+            border-bottom 1px solid #ffffff
+            border-top 1px solid #ffffff      
+        &__nav-sublist-item a 
+            text-decoration none
+            color #ffffff        
+            font-size 20px
+        .nav-img
+            margin-top 10px
+@media(min-width 1200px)
+
+    .slideout-menu 
+        position: fixed
+        left: 0
+        top: 0
+        bottom: 0
+        right: 0
+        z-index: 0
+        width: 256px
+        overflow-y: auto
+        -webkit-overflow-scrolling: touch
+        display: none
+
+
+    .slideout-panel 
+        position: relative
+        z-index: 1
+
+
+    .slideout-open,
+    .slideout-open body,
+    .slideout-open .slideout-panel 
+        overflow: hidden
+
+
+    .slideout-open .slideout-menu 
+        display: block
+
+    .menu
+        background-color #262827
+    
+    
+    .menu h1
+        text-align center
+        color #ffffff
+        border-bottom 2px solid #7D7D7C
+        padding-bottom 15px
+    .panel
+        background-color white
+        height 800px
+        position relative
+    .toggle-button
+        font-size 32px !important
+        position absolute
+        top 20px
+        left 40px
+        cursor pointer
+        background #7D7D7C 
+        color #ffffff
+        padding 10px 20px 10px 20px 
+        border-radius:  30px
+        border 2px solid #7D7D7C
+    .toggle-button:hover
+        background  transparent 
+        color #7D7D7C 
+        border-radius:  30px
+    .toggle-button:active
+        background  transparent 
+        color #000000 
+        border-radius:  30px
+        border 2px solid #000000
+    .page-header
+        &__nav-list 
+            font-family 'Lobster', cursive
+            list-style-type none
+            padding-left 0px
+            margin-top 0px
+            text-align center
+        &__nav-list-item 
+            padding-top 20px
+            padding-bottom 10px
+            border-bottom 4px solid #fff
+        &__nav-list-item a 
+            text-decoration none
+            color #ffffff  
+            font-size 20px 
+            padding-bottom 15px
+            display block 
+           
+        &__nav-sublist
+            list-style-type none
+        
+        &__nav-sublist-item 
+            margin-left -40px 
+            padding-top 15px
+            padding-bottom 15px
+            border-bottom 1px solid #ffffff
+            border-top 1px solid #ffffff      
+        &__nav-sublist-item a 
+            text-decoration none
+            color #ffffff        
+            font-size 20px
+        .nav-img
+            margin-top 10px
