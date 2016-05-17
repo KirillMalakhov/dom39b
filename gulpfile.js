@@ -58,6 +58,7 @@ gulp.task('stylus', function(){
  gulp.task('jade', function(){
      console.log('-----------Собирается JADE');
       gulp.src('./src/**/*.jade')
+      .pipe(newer('./src/**/*.jade'))
         .pipe(plumber(function(error){
             gutil.log(gutil.colors.red(error.message)); //Красит ошибку в красный цвет
             this.emit('end');
@@ -148,6 +149,10 @@ gulp.task('browser-sync', () => {
             logPrefix: "App"
         }
     );
+      browserSync.watch([
+    dirs.build + '/**/*.*',
+    '!' + dirs.build +  + '/**/*.map.*'
+  ]).on('change', browserSync.reload);
 });
 
                                 /*Сборка всего*/

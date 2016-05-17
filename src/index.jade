@@ -4,9 +4,22 @@ html(lang='ru')
     body
         include blocks/nav/nav.jade
         main.panel#panel
-            a.toggle-button МЕНЮ
+            include blocks/page-header/page-header-index.jade
+            .horizontal-line
+            .news-blog
+                .container
+                    .row
+                        include blocks/index-items/index-item1.jade
+                        include blocks/index-items/index-item3.jade
+                        include blocks/index-items/index-item2.jade
                 
-            include blocks/page-header/page-header.jade
+        
+        
+        
+        
+        
+        
+        
         include blocks/bottom.jade
        
     
